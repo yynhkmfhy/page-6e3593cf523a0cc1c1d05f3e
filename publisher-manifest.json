@@ -1,0 +1,74 @@
+{
+  "version": 2,
+  "template_version": "3a528c553883e59d7cfa",
+  "page_size": 20,
+  "site_id": "8d5bbdb85703f5c76ddcd862",
+  "owner": "yynhkmfhy",
+  "repo": "page-6e3593cf523a0cc1c1d05f3e",
+  "title": "GrayCat",
+  "mode": "repo",
+  "articles": [
+    {
+      "id": "6e3593cf523a0cc1c1d05f3e",
+      "a": "GrayCat",
+      "b": "",
+      "entity": "GrayCat",
+      "brand": "GrayCat",
+      "separator": "",
+      "path": "index.html",
+      "hash": "3544d2da53b42d7fe45b99df92cdd5e228b98dd8f7f956a2d472b08894aa03c0",
+      "content": {
+        "keyword1": "GrayCat",
+        "keyword2": "",
+        "primary_entity": "GrayCat",
+        "plans": [],
+        "clients": [],
+        "_offline": false,
+        "content": {
+          "AI_HERO_INTRO": "GrayCat 为追求高效能与隐私的用户提供稳定、干净的现代网络路由方案，拒绝冗余，专注本质。",
+          "AI_DESCRIPTION": "GrayCat 为追求高效能与隐私的用户提供稳定、干净的现代网络路由方案，拒绝冗余，专注本质。"
+        },
+        "_brand_page": {
+          "version": 3,
+          "body": "<style>\n:root {--bg: #1e252b;--surface: #262f38;--surface-hover: #2f3a46;--text: #e2e8f0;--text-muted: #94a3b8;--accent: #06b6d4;--accent-contrast: #0f172a;--border: #334155;--radius: 16px}\n* {box-sizing: border-box;margin: 0;padding: 0}\nbody {background-color: var(--bg);color: var(--text);font-family: -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif;line-height: 1.6;padding: 0}\na {color: inherit;text-decoration: none}\nheader {border-bottom: 1px solid var(--border);background-color: var(--bg);position: sticky;top: 0;z-index: 100}\n.nav-container {max-width: 1200px;margin: 0 auto;padding: 1rem 2rem;display: flex;justify-content: space-between;align-items: center}\n.brand-logo {font-weight: 700;font-size: 1.25rem;letter-spacing: -0.05em;color: var(--accent)}\n.nav-links {display: flex;gap: 2rem;font-size: 0.95rem;color: var(--text-muted)}\n.nav-links a:hover {color: var(--accent)}\nmain {max-width: 1200px;margin: 0 auto;padding: 4rem 2rem}\n.hero {margin-bottom: 5rem}\n.hero-grid {display: grid;grid-template-columns: 2fr 1fr;gap: 3rem;align-items: start}\n@media (max-width: 768px) {\n  .hero-grid {grid-template-columns: 1fr}\n}\n.hero-main h1 {font-size: 3.5rem;font-weight: 800;letter-spacing: -0.03em;margin-bottom: 1.5rem;color: var(--text)}\n.hero-main h1 span {color: var(--accent)}\n.hero-quote {font-size: 1.25rem;color: var(--text-muted);border-left: 3px solid var(--accent);padding-left: 1.5rem;margin-bottom: 2rem}\n.hero-panel {background: var(--surface);border-radius: var(--radius);padding: 2rem;box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3);border: 1px solid var(--border)}\n.hero-panel h3 {font-size: 1.1rem;margin-bottom: 1rem;color: var(--accent)}\n.hero-panel p {color: var(--text-muted);font-size: 0.9rem;margin-bottom: 1.5rem}\n.btn {display: inline-block;background: var(--accent);color: var(--accent-contrast);padding: 0.75rem 1.5rem;border-radius: 8px;font-weight: 600;font-size: 0.95rem;transition: opacity 0.2s}\n.btn:hover {opacity: 0.9}\nsection {margin-bottom: 6rem}\nsection h2 {font-size: 2rem;margin-bottom: 2.5rem;letter-spacing: -0.02em}\n.features-grid {display: grid;grid-template-columns: repeat(3, 1fr);gap: 2rem}\n@media (max-width: 768px) {\n  .features-grid {grid-template-columns: 1fr}\n}\n.card {background: var(--surface);border-radius: var(--radius);padding: 2.5rem;box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.2);border: 1px solid var(--border)}\n.card h3 {font-size: 1.25rem;margin-bottom: 1rem;color: var(--text)}\n.card p {color: var(--text-muted);font-size: 0.95rem}\n.plans-list {display: flex;flex-direction: column;gap: 1.5rem}\n.plan-row {background: var(--surface);border-radius: var(--radius);padding: 2rem;display: grid;grid-template-columns: 1fr 2fr 1fr;align-items: center;gap: 2rem;box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.2);border: 1px solid var(--border)}\n@media (max-width: 768px) {\n  .plan-row {grid-template-columns: 1fr;gap: 1rem}\n}\n.plan-info h3 {font-size: 1.25rem;margin-bottom: 0.25rem}\n.plan-price {font-size: 1.5rem;font-weight: 700;color: var(--accent)}\n.plan-annual {font-size: 0.85rem;color: var(--text-muted)}\n.plan-features {list-style: none;display: grid;grid-template-columns: repeat(2, 1fr);gap: 0.5rem 1rem;font-size: 0.9rem;color: var(--text-muted)}\n@media (max-width: 768px) {\n  .plan-features {grid-template-columns: 1fr}\n}\n.plan-features li::before {content: \"— \";color: var(--accent)}\n.plan-action {text-align: right}\n@media (max-width: 768px) {\n  .plan-action {text-align: left}\n}\n.faq-list {display: flex;flex-direction: column;gap: 1.5rem}\n.faq-item {background: var(--surface);border-radius: var(--radius);padding: 2rem;box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.2);border: 1px solid var(--border)}\n.faq-number {font-size: 0.85rem;color: var(--accent);font-weight: 700;margin-bottom: 0.5rem;display: block}\n.faq-item h3 {font-size: 1.1rem;margin-bottom: 0.75rem}\n.faq-item p {color: var(--text-muted);font-size: 0.95rem}\nfooter {border-top: 1px solid var(--border);padding: 3rem 2rem;text-align: center;color: var(--text-muted);font-size: 0.9rem}\n.footer-content {max-width: 1200px;margin: 0 auto;display: flex;justify-content: space-between;align-items: center}\n@media (max-width: 768px) {\n  .footer-content {flex-direction: column;gap: 1rem}\n}\n</style><header>\n  <div class=\"nav-container\">\n    <div class=\"brand-logo\">GrayCat</div>\n    <nav class=\"nav-links\">\n      <a href=\"#features\">特性</a>\n      <a href=\"#plans\">套餐</a>\n      <a href=\"#faq\">常见问题</a>\n    </nav>\n  </div>\n</header>\n\n<main>\n  <div class=\"hero\">\n    <div class=\"hero-grid\">\n      <div class=\"hero-main\">\n        <h1>GrayCat · 精简流畅的 <span>网络路由</span> 方案</h1>\n        <div class=\"hero-quote\">\n          “去除多余的装饰，保留绝对的速度与稳定性。GrayCat 重新定义日常网络连接的轻量体验。”\n        </div>\n        <p>面向专业用户与团队的高性能节点配置，通过精心调优的路由策略，确保每一次数据传输都准确、高效。</p>\n      </div>\n      <div class=\"hero-panel\">\n        <h3>快速状态</h3>\n        <p>系统运行平稳，核心节点全部在线。延迟低至毫秒级别，提供不间断的高带宽支撑。</p>\n        <a href=\"#plans\" class=\"btn\">查看可用套餐</a>\n      </div>\n    </div>\n  </div>\n\n  <section id=\"features\">\n    <h2>核心设计与能力</h2>\n    <div class=\"features-grid\">\n      <div class=\"card\">\n        <h3>极速流量</h3>\n        <p>提供充足的高速流量配额，满足高强度的数据交互、流媒体播放与日常办公需求。</p>\n      </div>\n      <div class=\"card\">\n        <h3>多端同步</h3>\n        <p>支持多台主流设备同时在线连接，单一账户打通全平台，管理更省心。</p>\n      </div>\n      <div class=\"card\">\n        <h3>专线优化</h3>\n        <p>精选优质线路节点，大幅度降低跨区域网络延迟，保障复杂环境下的稳定性。</p>\n      </div>\n    </div>\n  </section>\n\n  <section id=\"plans\">\n    <h2>服务套餐</h2>\n    <div class=\"plans-list\">\n      <div class=\"plan-row\">\n        <div class=\"plan-info\">\n          <h3>基础版</h3>\n          <div class=\"plan-price\">¥15<span>/月</span></div>\n          <div class=\"plan-annual\">按年付仅需 ¥150/年</div>\n        </div>\n        <ul class=\"plan-features\">\n          <li>每月 100GB 极速流量</li>\n          <li>支持 3 台设备同时在线</li>\n          <li>解锁基础流媒体</li>\n          <li>普通线路节点池</li>\n        </ul>\n        <div class=\"plan-action\">\n          <a href=\"#\" class=\"btn\">选择基础版</a>\n        </div>\n      </div>\n\n      <div class=\"plan-row\">\n        <div class=\"plan-info\">\n          <h3>旗舰版</h3>\n          <div class=\"plan-price\">¥35<span>/月</span></div>\n          <div class=\"plan-annual\">按年付仅需 ¥350/年</div>\n        </div>\n        <ul class=\"plan-features\">\n          <li>每月 300GB 极速流量</li>\n          <li>支持 5 台设备同时在线</li>\n          <li>全节点原生流媒体解锁</li>\n          <li>IPLC 专线游戏加速优化</li>\n          <li>7x24 优先工单支持</li>\n        </ul>\n        <div class=\"plan-action\">\n          <a href=\"#\" class=\"btn\">选择旗舰版</a>\n        </div>\n      </div>\n\n      <div class=\"plan-row\">\n        <div class=\"plan-info\">\n          <h3>团队版</h3>\n          <div class=\"plan-price\">¥85<span>/月</span></div>\n          <div class=\"plan-annual\">按年付仅需 ¥850/年</div>\n        </div>\n        <ul class=\"plan-features\">\n          <li>每月 1000GB 极速流量</li>\n          <li>支持 20 台设备同时在线</li>\n          <li>VIP 专属高带宽节点</li>\n          <li>支持企业定制路由</li>\n          <li>专属客户经理服务</li>\n        </ul>\n        <div class=\"plan-action\">\n          <a href=\"#\" class=\"btn\">选择团队版</a>\n        </div>\n      </div>\n    </div>\n  </section>\n\n  <section id=\"faq\">\n    <h2>常见问题</h2>\n    <div class=\"faq-list\">\n      <div class=\"faq-item\">\n        <span class=\"faq-number\">01</span>\n        <h3>如何开始使用 GrayCat 服务？</h3>\n        <p>选择适合您的套餐并完成订阅后，您将获得专属的配置链接或导入凭证，按照对应平台的客户端指引即可一键导入并连接。</p>\n      </div>\n      <div class=\"faq-item\">\n        <span class=\"faq-number\">02</span>\n        <h3>支持哪些主流操作系统与客户端？</h3>\n        <p>我们全面兼容主流平台的常见现代化客户端，包括但不限于各类桌面与移动端代理软件，满足不同场景下的使用习惯。</p>\n      </div>\n      <div class=\"faq-item\">\n        <span class=\"faq-number\">03</span>\n        <h3>流量是如何计算与重置的？</h3>\n        <p>流量采用双向清算或单向计算标准（具体视节点策略而定），并在每个自然月度账单日自动重置为初始额度，未使用部分不累加。</p>\n      </div>\n      <div class=\"faq-item\">\n        <span class=\"faq-number\">04</span>\n        <h3>如果遇到连接中断或速率下降该怎么办？</h3>\n        <p>请首先尝试更新订阅获取最新可用节点。如问题依旧，可通过用户后台提交工单，技术团队将协助排查本地网络或调整专属路由。</p>\n      </div>\n    </div>\n  </section>\n</main>\n\n<footer>\n  <div class=\"footer-content\">\n    <div>© GrayCat. All rights reserved.</div>\n    <div>保持精简，专注连接。</div>\n  </div>\n</footer>",
+          "hash": "ca50a1492d5e5d5a7705914d912c602f22a8730f6776e2b7949e6fc621672881",
+          "seo": {
+            "title": "GrayCat - 极简网络连接与路由工具",
+            "keywords": "GrayCat, 代理工具, 专线网络, 流量管理, 高速连接",
+            "description": "GrayCat 为追求高效能与隐私的用户提供稳定、干净的现代网络路由方案，拒绝冗余，专注本质。"
+          },
+          "provider": "grok",
+          "model": "gemini-3.7-flash",
+          "design": {
+            "no": "6506",
+            "hero": "3 杂志式多栏网格配引言",
+            "palette": "7 石板灰配青色",
+            "nav": "3 首屏内嵌锚点标签",
+            "card": "3 大圆角软阴影",
+            "plans_view": "2 纵向列表逐行展开",
+            "faq_view": "2 编号列表",
+            "tone": "3 简洁利落的短句",
+            "order": "首屏优先，其余区块由 AI 根据已选构图和信息关系安排"
+          }
+        }
+      }
+    }
+  ],
+  "domain": {
+    "apex": "cxpbr.cn",
+    "host": "p-62698566aa.cxpbr.cn",
+    "kind": "subdomain",
+    "candidate_roots_ref": "subdomain_roots:91e741dce7c147d9ce91af6f84daa678dae755807d903b04925261e0a3a8d804",
+    "prefix_mode": "auto"
+  },
+  "friendlinks": [],
+  "file_hashes": {
+    "index.html": "e0248713031ebbe59665f28327dd3da987467f43d2349a842d2da5e65209901a",
+    "sitemap.xml": "bb057679635167ba7415f0e031410cd729a0aeb98761979638ed8169ee04d30d",
+    ".nojekyll": "12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126",
+    "CNAME": "99e720939c8459a044a868245f3d67114a330fcae5c410a2fd20f5aedb527428",
+    "robots.txt": "01004f38ec1ee611db3a71a73c7b52633c7c37ff41926dfec90c291ba0a6f2b2",
+    "ad7b35016e5b38017c7423e3f1b23836.txt": "a879981ff13bef978e2c8b2c946b6e66b4df9b78421e1f884605d15f72a90f2b"
+  },
+  "revision": "58515e39b787b09e814836cbdddb0d21f5fb26ad9fb878be4a83d06d2a9d8b4e"
+}

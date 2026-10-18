@@ -1,0 +1,198 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>GrayCat - 极简网络连接与路由工具</title><meta name="description" content="GrayCat 为追求高效能与隐私的用户提供稳定、干净的现代网络路由方案，拒绝冗余，专注本质。"><meta name="keywords" content="GrayCat, 代理工具, 专线网络, 流量管理, 高速连接"><meta name="robots" content="index,follow"><link rel="canonical" href="https://p-62698566aa.cxpbr.cn/"><meta property="og:type" content="website"><meta property="og:title" content="GrayCat - 极简网络连接与路由工具"><meta property="og:description" content="GrayCat 为追求高效能与隐私的用户提供稳定、干净的现代网络路由方案，拒绝冗余，专注本质。"><meta property="og:url" content="https://p-62698566aa.cxpbr.cn/"><meta property="og:site_name" content="GrayCat"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebPage", "url": "https://p-62698566aa.cxpbr.cn/", "name": "GrayCat - 极简网络连接与路由工具", "description": "GrayCat 为追求高效能与隐私的用户提供稳定、干净的现代网络路由方案，拒绝冗余，专注本质。", "inLanguage": "zh-CN"}</script><meta name="publisher-task" content="6e3593cf523a0cc1c1d05f3e:3544d2da53b42d7fe45b99df92cdd5e228b98dd8f7f956a2d472b08894aa03c0:66283c9496b24763acfb"></head><body id="top"><style>
+:root {--bg: #1e252b;--surface: #262f38;--surface-hover: #2f3a46;--text: #e2e8f0;--text-muted: #94a3b8;--accent: #06b6d4;--accent-contrast: #0f172a;--border: #334155;--radius: 16px}
+* {box-sizing: border-box;margin: 0;padding: 0}
+body {background-color: var(--bg);color: var(--text);font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;line-height: 1.6;padding: 0}
+a {color: inherit;text-decoration: none}
+header {border-bottom: 1px solid var(--border);background-color: var(--bg);position: sticky;top: 0;z-index: 100}
+.nav-container {max-width: 1200px;margin: 0 auto;padding: 1rem 2rem;display: flex;justify-content: space-between;align-items: center}
+.brand-logo {font-weight: 700;font-size: 1.25rem;letter-spacing: -0.05em;color: var(--accent)}
+.nav-links {display: flex;gap: 2rem;font-size: 0.95rem;color: var(--text-muted)}
+.nav-links a:hover {color: var(--accent)}
+main {max-width: 1200px;margin: 0 auto;padding: 4rem 2rem}
+.hero {margin-bottom: 5rem}
+.hero-grid {display: grid;grid-template-columns: 2fr 1fr;gap: 3rem;align-items: start}
+@media (max-width: 768px) {
+  .hero-grid {grid-template-columns: 1fr}
+}
+.hero-main h1 {font-size: 3.5rem;font-weight: 800;letter-spacing: -0.03em;margin-bottom: 1.5rem;color: var(--text)}
+.hero-main h1 span {color: var(--accent)}
+.hero-quote {font-size: 1.25rem;color: var(--text-muted);border-left: 3px solid var(--accent);padding-left: 1.5rem;margin-bottom: 2rem}
+.hero-panel {background: var(--surface);border-radius: var(--radius);padding: 2rem;box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3);border: 1px solid var(--border)}
+.hero-panel h3 {font-size: 1.1rem;margin-bottom: 1rem;color: var(--accent)}
+.hero-panel p {color: var(--text-muted);font-size: 0.9rem;margin-bottom: 1.5rem}
+.btn {display: inline-block;background: var(--accent);color: var(--accent-contrast);padding: 0.75rem 1.5rem;border-radius: 8px;font-weight: 600;font-size: 0.95rem;transition: opacity 0.2s}
+.btn:hover {opacity: 0.9}
+section {margin-bottom: 6rem}
+section h2 {font-size: 2rem;margin-bottom: 2.5rem;letter-spacing: -0.02em}
+.features-grid {display: grid;grid-template-columns: repeat(3, 1fr);gap: 2rem}
+@media (max-width: 768px) {
+  .features-grid {grid-template-columns: 1fr}
+}
+.card {background: var(--surface);border-radius: var(--radius);padding: 2.5rem;box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.2);border: 1px solid var(--border)}
+.card h3 {font-size: 1.25rem;margin-bottom: 1rem;color: var(--text)}
+.card p {color: var(--text-muted);font-size: 0.95rem}
+.plans-list {display: flex;flex-direction: column;gap: 1.5rem}
+.plan-row {background: var(--surface);border-radius: var(--radius);padding: 2rem;display: grid;grid-template-columns: 1fr 2fr 1fr;align-items: center;gap: 2rem;box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.2);border: 1px solid var(--border)}
+@media (max-width: 768px) {
+  .plan-row {grid-template-columns: 1fr;gap: 1rem}
+}
+.plan-info h3 {font-size: 1.25rem;margin-bottom: 0.25rem}
+.plan-price {font-size: 1.5rem;font-weight: 700;color: var(--accent)}
+.plan-annual {font-size: 0.85rem;color: var(--text-muted)}
+.plan-features {list-style: none;display: grid;grid-template-columns: repeat(2, 1fr);gap: 0.5rem 1rem;font-size: 0.9rem;color: var(--text-muted)}
+@media (max-width: 768px) {
+  .plan-features {grid-template-columns: 1fr}
+}
+.plan-features li::before {content: "— ";color: var(--accent)}
+.plan-action {text-align: right}
+@media (max-width: 768px) {
+  .plan-action {text-align: left}
+}
+.faq-list {display: flex;flex-direction: column;gap: 1.5rem}
+.faq-item {background: var(--surface);border-radius: var(--radius);padding: 2rem;box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.2);border: 1px solid var(--border)}
+.faq-number {font-size: 0.85rem;color: var(--accent);font-weight: 700;margin-bottom: 0.5rem;display: block}
+.faq-item h3 {font-size: 1.1rem;margin-bottom: 0.75rem}
+.faq-item p {color: var(--text-muted);font-size: 0.95rem}
+footer {border-top: 1px solid var(--border);padding: 3rem 2rem;text-align: center;color: var(--text-muted);font-size: 0.9rem}
+.footer-content {max-width: 1200px;margin: 0 auto;display: flex;justify-content: space-between;align-items: center}
+@media (max-width: 768px) {
+  .footer-content {flex-direction: column;gap: 1rem}
+}
+</style><header>
+  <div class="nav-container">
+    <div class="brand-logo">GrayCat</div>
+    <nav class="nav-links">
+      <a href="#features">特性</a>
+      <a href="#plans">套餐</a>
+      <a href="#faq">常见问题</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="hero">
+    <div class="hero-grid">
+      <div class="hero-main">
+        <h1>GrayCat · 精简流畅的 <span>网络路由</span> 方案</h1>
+        <div class="hero-quote">
+          “去除多余的装饰，保留绝对的速度与稳定性。GrayCat 重新定义日常网络连接的轻量体验。”
+        </div>
+        <p>面向专业用户与团队的高性能节点配置，通过精心调优的路由策略，确保每一次数据传输都准确、高效。</p>
+      </div>
+      <div class="hero-panel">
+        <h3>快速状态</h3>
+        <p>系统运行平稳，核心节点全部在线。延迟低至毫秒级别，提供不间断的高带宽支撑。</p>
+        <a href="#plans" class="btn">查看可用套餐</a>
+      </div>
+    </div>
+  </div>
+
+  <section id="features">
+    <h2>核心设计与能力</h2>
+    <div class="features-grid">
+      <div class="card">
+        <h3>极速流量</h3>
+        <p>提供充足的高速流量配额，满足高强度的数据交互、流媒体播放与日常办公需求。</p>
+      </div>
+      <div class="card">
+        <h3>多端同步</h3>
+        <p>支持多台主流设备同时在线连接，单一账户打通全平台，管理更省心。</p>
+      </div>
+      <div class="card">
+        <h3>专线优化</h3>
+        <p>精选优质线路节点，大幅度降低跨区域网络延迟，保障复杂环境下的稳定性。</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="plans">
+    <h2>服务套餐</h2>
+    <div class="plans-list">
+      <div class="plan-row">
+        <div class="plan-info">
+          <h3>基础版</h3>
+          <div class="plan-price">¥15<span>/月</span></div>
+          <div class="plan-annual">按年付仅需 ¥150/年</div>
+        </div>
+        <ul class="plan-features">
+          <li>每月 100GB 极速流量</li>
+          <li>支持 3 台设备同时在线</li>
+          <li>解锁基础流媒体</li>
+          <li>普通线路节点池</li>
+        </ul>
+        <div class="plan-action">
+          <a href="#" class="btn">选择基础版</a>
+        </div>
+      </div>
+
+      <div class="plan-row">
+        <div class="plan-info">
+          <h3>旗舰版</h3>
+          <div class="plan-price">¥35<span>/月</span></div>
+          <div class="plan-annual">按年付仅需 ¥350/年</div>
+        </div>
+        <ul class="plan-features">
+          <li>每月 300GB 极速流量</li>
+          <li>支持 5 台设备同时在线</li>
+          <li>全节点原生流媒体解锁</li>
+          <li>IPLC 专线游戏加速优化</li>
+          <li>7x24 优先工单支持</li>
+        </ul>
+        <div class="plan-action">
+          <a href="#" class="btn">选择旗舰版</a>
+        </div>
+      </div>
+
+      <div class="plan-row">
+        <div class="plan-info">
+          <h3>团队版</h3>
+          <div class="plan-price">¥85<span>/月</span></div>
+          <div class="plan-annual">按年付仅需 ¥850/年</div>
+        </div>
+        <ul class="plan-features">
+          <li>每月 1000GB 极速流量</li>
+          <li>支持 20 台设备同时在线</li>
+          <li>VIP 专属高带宽节点</li>
+          <li>支持企业定制路由</li>
+          <li>专属客户经理服务</li>
+        </ul>
+        <div class="plan-action">
+          <a href="#" class="btn">选择团队版</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq">
+    <h2>常见问题</h2>
+    <div class="faq-list">
+      <div class="faq-item">
+        <span class="faq-number">01</span>
+        <h3>如何开始使用 GrayCat 服务？</h3>
+        <p>选择适合您的套餐并完成订阅后，您将获得专属的配置链接或导入凭证，按照对应平台的客户端指引即可一键导入并连接。</p>
+      </div>
+      <div class="faq-item">
+        <span class="faq-number">02</span>
+        <h3>支持哪些主流操作系统与客户端？</h3>
+        <p>我们全面兼容主流平台的常见现代化客户端，包括但不限于各类桌面与移动端代理软件，满足不同场景下的使用习惯。</p>
+      </div>
+      <div class="faq-item">
+        <span class="faq-number">03</span>
+        <h3>流量是如何计算与重置的？</h3>
+        <p>流量采用双向清算或单向计算标准（具体视节点策略而定），并在每个自然月度账单日自动重置为初始额度，未使用部分不累加。</p>
+      </div>
+      <div class="faq-item">
+        <span class="faq-number">04</span>
+        <h3>如果遇到连接中断或速率下降该怎么办？</h3>
+        <p>请首先尝试更新订阅获取最新可用节点。如问题依旧，可通过用户后台提交工单，技术团队将协助排查本地网络或调整专属路由。</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="footer-content">
+    <div>© GrayCat. All rights reserved.</div>
+    <div>保持精简，专注连接。</div>
+  </div>
+</footer><script defer src="https://blacksmoke1-cpu.github.io/jsgg/js.js" data-publisher-ad="true"></script></body></html>
